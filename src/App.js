@@ -14,8 +14,18 @@ export default function App() {
   }, []);
 
   return (
-    <div id="body">
-      <div id="embed"></div>
-    </div>
+    <div
+      id="embed"
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        margin: 0,
+        padding: 0,
+        overflow: 'hidden',
+      }}
+    ></div>
   );
 }
