@@ -6,7 +6,6 @@ init({
   username: "ash@fiftyfivegroup.com.au",
   password: "DX3w#fC6*mdTtm!eGswg",
 });
-
 export default function App() {
   useEffect(() => {
     const embed = new AppEmbed("#embed", {
@@ -20,5 +19,3 @@ export default function App() {
     </div>
   );
 }
-
-};
