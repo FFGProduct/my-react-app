@@ -33,13 +33,13 @@ export default function App() {
   );
 }
 */
-import { init, LiveboardEmbed, AuthType } from "@thoughtspot/visual-embed-sdk";
+import { init, LiveboardEmbed, AuthType,  EmbedEvent } from "@thoughtspot/visual-embed-sdk";
 import React, { useEffect } from "react";
 
 init({
   thoughtSpotHost: "https://team3.thoughtspot.cloud",
   authType: AuthType.Basic,
-  username: "product@fiftyfivegroup.com.au",
+  username: "ash@fiftyfivegroup.com.au",
   password: "DX3w#fC6*mdTtm!eGswg",
 });
 
