@@ -49,7 +49,59 @@ export default function App() {
       frameParams: {},
       liveboardId: "b6bb40a3-57dc-4b46-bfdc-9d76fbb74491",
     });
-    embed.render(); // Corrected this line
+    embed
+    // Register event listeners
+    .on(EmbedEvent.Init, showLoader)
+    .on(EmbedEvent.Load, hideLoader)
+    /*param-start-customActionHandle*//*param-end-customActionHandle*/
+    .on(EmbedEvent.Error, (error) => {
+        if(error?.data?.errorType === 'FULLSCREEN') {
+          showErrorBanner('none');
+        } else 
+        if(typeof(error.error) === 'string') {
+          showErrorBanner('flex', error.error);
+        } else {
+          showErrorBanner('flex');
+        }
+        console.log('Error ', error);
+        hideLoader();
+    })
+    // Render a viz within a liveboard
+    .render();
+
+/*param-start-useHostEvent*/
+/*param-end-useHostEvent*/
+
+// Function to show/hide
+function setDisplayStyle(el, style) {
+  if(document.getElementById(el)) {
+    document.getElementById(el).style.display = style;
+  }
+}
+
+// Functions to show and hide a loader while iframe loads
+function showLoader() {
+  setDisplayStyle("loader", "block");
+}
+function hideLoader() {
+  setDisplayStyle("loader", "none");
+}
+
+// Functions to show or hide No data images
+function showNoDataImage() {
+  setDisplayStyle("no-data", "block");
+}
+
+function hideNoDataImage() {
+  setDisplayStyle("no-data", "none");
+}
+
+function showErrorBanner(display, errorText) {
+  setDisplayStyle("errorBanner", display);
+  if(errorText) {
+    document.getElementById("errorBanner").firstElementChild.innerText = errorText;
+  }
+}
   }, []);
 
   return (
