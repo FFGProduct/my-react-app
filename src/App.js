@@ -3,7 +3,7 @@ import { init, AppEmbed, AuthType } from "@thoughtspot/visual-embed-sdk"; import
 init({
   thoughtSpotHost: "https://team3.thoughtspot.cloud/#/pinboard/b6bb40a3-57dc-4b46-bfdc-9d76fbb74491",
   authType: AuthType.Basic,
-  username: "ash@fiftyfivegroup.com.au",
+  username: "product@fiftyfivegroup.com.au",
   password: "DX3w#fC6*mdTtm!eGswg",
 });
 
