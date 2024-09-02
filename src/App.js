@@ -9,9 +9,11 @@ init({
 
 export default function App() {
   useEffect(() => {
-    const embed = new AppEmbed("#embed", {
-      modularHomeExperience: true,
-    }).render();
+
+    const embed = new LiveboardEmbed("#embed", {
+    frameParams: {},
+     liveboardId: "b6bb40a3-57dc-4b46-bfdc-9d76fbb74491",
+})render();
   }, []);
 
   return (
