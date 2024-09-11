@@ -47,7 +47,7 @@ export default function App() {
   useEffect(() => {
     const embed = new LiveboardEmbed("#embed", {
       frameParams: {},
-      liveboardId: "b6bb40a3-57dc-4b46-bfdc-9d76fbb74491",
+      liveboardId: "bb310f5b-441a-4e52-abc3-ff32eec9b441",
     });
     embed
     // Register event listeners
