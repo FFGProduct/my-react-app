@@ -39,8 +39,8 @@ import React, { useEffect } from "react";
 init({
   thoughtSpotHost: "https://team3.thoughtspot.cloud",
   authType: AuthType.Basic,
-  username: "ash@fiftyfivegroup.com.au",
-  password: "DX3w#fC6*mdTtm!eGswg",
+  username: "prodct@fiftyfivegroup.com.au",
+  password: "Pulse@FFG!",
 });
 
 export default function App() {
