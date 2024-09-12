@@ -33,7 +33,7 @@ export default function App() {
   );
 }
 */
-import { init, LiveboardEmbed, AuthType,  EmbedEvent } from "@thoughtspot/visual-embed-sdk";
+import { init, LiveboardEmbed, AuthType,  EmbedEvent, Action } from "@thoughtspot/visual-embed-sdk";
 import React, { useEffect } from "react";
 
 init({
@@ -51,7 +51,7 @@ export default function App() {
 ],
     disabledActionReason: "Reason for disabling",
     // visibleActions: [], /* Removes all actions if empty array */
-    //hiddenActions: [Action.AddFilter,	Action.AddParameter,	Action.AddToFavorites,	Action.ConfigureFilter,	Action.Edit,	Action.EditTML,	Action.ExportTML,	Action.ImportTML,	Action.LiveboardInfo,	Action.MakeACopy,	Action.Remove,	Action.Save,	Action.Schedule, Action.Subscription,	Action.SchedulesList,	Action.Share,	Action.UpdateTML, Action.SpotIQAnalyze, Action.AnswerChartSwitcher,	Action.CopyLink,	Action.CreateMonitor,	Action.CrossFilter,	Action.DrillDown,	Action.DrillExclude,	Action.DrillInclude,	Action.Edit,	Action.Explore,	Action.ManagePipelines,	Action.Pin,	Action.Remove,	Action.RemoveCrossFilter,	Action.ShowUnderlyingData,	Action.ShowUnderlyingData,	Action.SpotIQAnalyze,	Action.SpotIQAnalyze,	Action.SyncToOtherApps,	Action.SyncToOtherApps,	Action.SyncToSheets,	Action.SyncToSheets,	Action.ToggleSize,	Action.ToggleSize],
+    hiddenActions: [Action.AddFilter,	Action.AddParameter,	Action.AddToFavorites,	Action.ConfigureFilter,	Action.Edit,	Action.EditTML,	Action.ExportTML,	Action.ImportTML,	Action.LiveboardInfo,	Action.MakeACopy,	Action.Remove,	Action.Save,	Action.Schedule, Action.Subscription,	Action.SchedulesList,	Action.Share,	Action.UpdateTML, Action.SpotIQAnalyze, Action.AnswerChartSwitcher,	Action.CopyLink,	Action.CreateMonitor,	Action.CrossFilter,	Action.DrillDown,	Action.DrillExclude,	Action.DrillInclude,	Action.Edit,	Action.Explore,	Action.ManagePipelines,	Action.Pin,	Action.Remove,	Action.RemoveCrossFilter,	Action.ShowUnderlyingData,	Action.ShowUnderlyingData,	Action.SpotIQAnalyze,	Action.SpotIQAnalyze,	Action.SyncToOtherApps,	Action.SyncToOtherApps,	Action.SyncToSheets,	Action.SyncToSheets,	Action.ToggleSize,	Action.ToggleSize],
     
       /* Use either visibleActions or hiddenActions */
       liveboardId: "bb310f5b-441a-4e52-abc3-ff32eec9b441",
